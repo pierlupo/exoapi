@@ -85,8 +85,15 @@ text-align: center;
 :hover{
   background-color: #89B0AE;
   transition: all 1s linear;
-  border:1px solid gold;
+  border:1px solid rgba(255, 217, 0, 0.699);
   border-radius: 70%;
   text-transform: uppercase;
 }
 
+.green{
+  color: green;
+}
+
+.red{
+  color: red;
+}

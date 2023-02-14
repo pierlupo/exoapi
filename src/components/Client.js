@@ -1,7 +1,7 @@
 import Address from "./Address"
 
 export default function Client(props) {
-    const {firstName,lastName,phone,address} = props.client
+    const {firstName,lastName,phone,status,address} = props.client
 return(
 
 <>  
@@ -13,6 +13,7 @@ return(
    <p><strong>Prénom :</strong> {firstName}</p>
    <p><strong>Nom :</strong> {lastName}</p>
    <p><strong>Tel :</strong> {phone}</p>
+   <p className={status? "green": "red"}><strong>statut :</strong> {status}{status? "vivant": "mort"}</p>
    <Address adresse={address}></Address>
     
     </div>
