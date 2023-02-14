@@ -1,0 +1,92 @@
+/* **********Reset********** */
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+* {
+margin: 0;
+padding: 0;
+
+}
+
+
+html, body {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+body {
+  line-height: 1.5;
+}
+
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+
+input, button, textarea, select {
+font: inherit;
+}
+
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+
+/*#root, #__next {
+  isolation: isolate;
+} */
+
+/* **********Fin Reset********** */
+
+body {
+  margin: 0;
+  font-family:  Roboto;
+  background-color: #5C574F;
+  color:rgba(0, 0, 0, 0.712);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  text-align: center;
+}
+
+/* .conteneur{
+  display: flex;.
+  margin-left: auto;
+  margin-right: auto;
+  width:20rem;
+} */
+
+.conteneur_client{
+margin-left: auto;
+margin-right: auto;
+width:20rem;
+margin-top: 1rem;
+margin-bottom: 1rem;
+display:flex;
+flex-direction: column;
+cursor:pointer;
+text-align: center;
+}
+
+:hover{
+  background-color: #89B0AE;
+  transition: all 1s linear;
+  border:1px solid gold;
+  border-radius: 70%;
+  text-transform: uppercase;
+}
+
