@@ -1,6 +1,7 @@
 import { Component } from "react"
 import { getInfoApiZip } from "../services/data.service"
 import Client from "./Client"
+import { Formulaire } from "./FormAjoutClient"
 
 
 export class DataComponent extends Component {
@@ -20,7 +21,13 @@ export class DataComponent extends Component {
             this.setState({ data : [...res.data]})
         })
     }
-
+    addClient = (client) => {
+        const tmpClients = [...this.state.data]
+        const lastid = tmpClients.length+1
+        const newClient = {id : lastid, ...client}
+        tmpClients.push(newClient)
+        this.setState({data : [...tmpClients]})
+    }
 
     render(){
         return(
@@ -34,6 +41,7 @@ export class DataComponent extends Component {
                 </div>)
                 }
                 {/* {this.state.clients.map((client) => (<Liste client={client} key={client.id}></Liste>))} */}
+                {<Formulaire addClient={this.addClient}></Formulaire>}
             </div>
             </>
         )

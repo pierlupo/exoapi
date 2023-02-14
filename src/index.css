@@ -98,3 +98,39 @@ text-align: center;
 .red{
   color: red;
 }
+
+label{
+  display: block;
+  margin: 1rem;
+}
+
+input{
+  width:250px;
+  height:30px;
+  border-radius: 0.5rem;
+  border:none;
+}
+button{
+  margin: 1rem;
+  cursor:pointer;
+  border-radius: 0.5rem;
+  width:150px;
+  height:30px;
+  text-transform: uppercase;
+  color:rgba(255, 255, 255, 0.705);
+  background-color: rgba(0, 0, 0, 0.582);
+  border:none;
+  font-size:18px;
+}
+
+.formu{
+margin-left: auto;
+margin-right: auto;
+width:20rem;
+text-align: center;
+text-transform: uppercase;
+background-color: grey;
+border: 1px solid black;
+border-radius: 0.3rem;
+color:white;
+}
